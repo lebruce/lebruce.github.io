@@ -1,0 +1,101 @@
+* {
+box-sizing: border-box;
+}
+
+html {
+  background-color: #343434;
+  color: #16b1b5;
+  font-family: 'Raleway, sans-serif';
+  font-weight: 200;
+  font-size: 24px;
+  scroll-behavior: smooth;
+  margin: auto 0; */ This should go under universal styles above */
+}
+
+header {
+  padding:40px;
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1 {
+  line-height: 0.8;
+}
+
+nav {
+  display:block;
+  padding: 1em 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+nav li {  /* only use a here, no additoinal markup */
+  list-style-type:none;
+  float:left;
+}
+
+nav a {  /* only use a here, no additoinal markup */
+
+  color: #fff;
+  margin: 20px;
+  padding: 20px;
+  /* font-variant-caps: small-caps;  - can this be used here instead? */
+  text-transform: uppercase; /* property to learn better */
+  list-style-type:none;
+  border: 1px solid #fff;
+}
+
+
+#work  {
+  background-color:#16b1b5;
+  padding: 40px;
+  color: #fff;
+  column-count: 2;
+}
+
+#work a {
+  color: #fff;
+  text-transform: lowercase;
+  text-decoration: underline;
+}
+
+div.column1 {
+  float:left;
+}
+
+div.column2 {
+  float:right;
+  background-image: url("..nhp_logo.png");
+}
+div.column2 img {
+  float:right;
+}
+
+
+#hobbies  {
+  padding: 40px;
+  clear: both;
+}
+
+#gallery  {
+  column-count: 3;
+  column-gap: 0;
+  background-color:#16b1b5;
+}
+div {
+  break-inside: avoid;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height:calc(100vh / 3);
+  object-fit:cover;
+  object-position: top; /* positions image within the object closer to the top */
+}
+
+footer {
+  text-align: center;
+}
